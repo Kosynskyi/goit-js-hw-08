@@ -32,9 +32,6 @@ function onFormSubmit(event) {
  * - сохраняем его в хранилище
  */
 function onTextareaInput(event) {
-  const messageForm = event.target.value;
-  localStorage.setItem(STORAGE_KEY, messageForm);
-
   formData[mailEl.name] = mailEl.value;
   formData[messageEl.name] = messageEl.value;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
